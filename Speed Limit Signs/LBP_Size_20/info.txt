@@ -1,0 +1,25 @@
+Speed Limit Signs
+#Pos = 4800 <----
+#Neg = 3500 <----
+-w = 20 <------
+-h = 20 <------
+-xangle = 0.5
+-yangle = 0.5
+-zangle = 0.2
+-mode = All 
+-minhitrate = 0.9975 as per Das and Mohammadi
+-featureType LBP
+
+
+NEW NEGATIVE IMAGES!!!!
+Previous attempts produced cascades that falsly identified other signs such as Do Not Enter and Hospital signs as stop signs.
+Images of these signs were used to generate a large number (1000) of negative images containing these signs in an attempt to train the 
+cascade to ignore them.
+Used six different speed limit signs with different speed limits printed on them for generality. 1000 sample images were generated for
+each sign.
+Used fewer samples to try to make training faster
+
+Notes: 
+Negative images consist of landscapes and cityscapes/streets as well as some images of people and sings
+
+--> Seems to work better than the HAAR cascade trained with the same parameters, fewer false positives <--

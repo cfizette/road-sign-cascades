@@ -1,0 +1,23 @@
+Speed Limit Signs
+#Pos = 3500 <----
+#Neg = 2000 <----
+-w = 24 <------
+-h = 24 <------
+-xangle = 0.5
+-yangle = 0.5
+-zangle = 0.2
+-mode = All 
+-minhitrate = 0.9975 as per Das and Mohammadi
+-featureType LBP
+
+
+NEW NEGATIVE IMAGES!!!!
+Used six different speed limit signs with different speed limits printed on them for generality. 1000 sample images were generated for
+each sign.
+Increased dimension of positive samples since 20x20 didn't seem to get good results
+
+
+Notes: 
+Negative images consist of landscapes and cityscapes/streets as well as some images of people and sings
+
+--> Seems to work better than the HAAR cascade trained with the same parameters, fewer false positives <--
