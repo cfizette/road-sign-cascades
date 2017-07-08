@@ -1,0 +1,20 @@
+Yield Signs
+#Pos = 3800
+#Neg = 3000
+-w = 24
+-h = 24
+-xangle = 0.5
+-yangle = 0.5
+-zangle = 0.2
+-mode = All 
+-minhitrate = 0.9975 as per Das and Mohammadi
+-featureType LBP
+
+
+NEW NEGATIVE IMAGES!!!!
+False Positives used to generate negative images
+
+Notes: 
+Negative images consist of landscapes and cityscapes/streets as well as some images of people and sings
+
+--> Seems to work better than the HAAR cascade trained with the same parameters, fewer false positives <--
