@@ -1,0 +1,26 @@
+Speed Limit Signs
+#Pos = 4000<----
+#Neg = 3000<----
+-w = 24 <------
+-h = 24 <------
+-xangle = 0.5
+-yangle = 0.5
+-zangle = 0.2
+-mode = All 
+-minhitrate = 0.9975 as per Das and Mohammadi
+-featureType HAAR
+
+Uses false positive negative images from sign trainings
+
+Notes: 
+High stage versions don't seem to pick up on targets that well.
+Lower stages identify stoplights but tend to identify multiple ones in a single stoplight.
+May try training a classifier for each color of stoplight.....
+Could also try lowering minHitRate
+From testing the classifier on that image with many signs in it it seems that the classifer looks for 
+light/dark regions surrounded by dark/light regions. Probably due to stoplights having a bright light duh.
+
+However, the 17 stage version can pick up the stoplight sign while discriminating against most other signs.
+It gets tricked by the letter E
+
+Stage 16 seems to work the best. It identifies the most traffic lights with the fewest false positives
