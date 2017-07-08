@@ -1,3 +1,0 @@
-Please visit this link to download the negative images used to create these cascades. https://drive.google.com/file/d/0B5-lSa9af2leZ0ZCUUJORmxDVTA/view?usp=sharing
-Github won't let me upload this large of a file and I don't know if/how to get around that.
-The file is called negFalsePos because some of the images inlcuded were generated using things that the early stop sign classifiers mistook for stop signs such as other signs.
