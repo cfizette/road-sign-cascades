@@ -1,0 +1,23 @@
+#Pos = 3700
+#Neg = 3000
+-w = 24
+-h = 24
+-xangle = 0.5
+-yangle = 0.5
+-zangle = 0.2
+-mode = All 
+-minhitrate = 0.9975 as per Das and Mohammadi <--------
+-featureType LBP
+
+
+NEW BACKGROUND IMAGES!!!!
+Previous attempts produced cascades that falsly identified other signs such as Do Not Enter and Hospital signs as stop signs
+Images of these signs were used to generate a large number (1000) of negative images containing these signs in an attempt to train the 
+cascade to ignore them. The same positive images were used.
+
+Notes: 
+Negative images consist of landscapes and cityscapes/streets as well as some images of people and sings
+Two different stop signs were used to generate positive images....don't know if this makes a difference
+Changed mode to all to capture some 45 degree features since the stop sign has angled edges. Hope to help differentiate stop signs from do not enter signs
+
+--> Seems to work better than the HAAR cascade trained with the same parameters, fewer false positives <--
