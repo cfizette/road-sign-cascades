@@ -1,8 +1,8 @@
 Speed Limit Signs
-#Pos = 3500 <----
-#Neg = 2000 <----
--w = 24 <------
--h = 24 <------
+#Pos = 3500 -
+#Neg = 2000 
+-w = 24 
+-h = 24 
 -xangle = 0.5
 -yangle = 0.5
 -zangle = 0.2
